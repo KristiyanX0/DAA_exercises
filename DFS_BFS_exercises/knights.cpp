@@ -1,7 +1,6 @@
 #include <iostream>
 #include <queue>
-#define SIZE 200
-#define VISITED 1
+#define SIZE 2000
 
 int N, M, K;
 bool visited[SIZE][SIZE]={false};
@@ -40,12 +39,12 @@ int main() {
     int x,y;
     for (size_t i=0;i<M;++i) {
         scanf("%d %d",&x,&y);
-        visited[x][y] = VISITED;
+        visited[x][y] = true;
     }
     for (size_t i=0;i<K;++i) {
         scanf("%d %d",&x,&y);
-        knights[i].first;
-        knights[i].second;
+        knights[i].first = x;
+        knights[i].second = y;
     }
     scanf("%d %d",&x,&y);
     princess.first=x;
@@ -59,6 +58,6 @@ int main() {
             maxSteps=std::max(maxSteps,dist[knights[i].first][knights[i].second]);
         }
     }
-    std::cout << countOfKnights  << " " << maxSteps;
+    printf("%d %d", countOfKnights, maxSteps);
     return 0;
 }
