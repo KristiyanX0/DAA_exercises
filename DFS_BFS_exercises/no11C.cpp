@@ -3,8 +3,8 @@
 #include<iostream>
 #include<vector>
 #include<queue>
-#define SIZE 1000
-#define Qsize 10000
+#define SIZE 1009
+#define Qsize 10009
 
 std::vector<int> path[SIZE];
 bool connections[SIZE][SIZE]={false};
@@ -54,5 +54,6 @@ int main() {
     }
     for (size_t i=0;i<Q;++i)
         printf("%d",(int)QQ[i]);
+    printf("\n");
     return 0;
 }
