@@ -9,10 +9,6 @@ void addEdge(int x, int y, std::vector<int> (&students)[SIZE]) {
     students[x].push_back(y);
 }
 
-void BFS(int x, std::vector<int> (&students)[SIZE]) {
-
-}
-
 int main() {
     int N;
     scanf("%d",&N);
@@ -21,6 +17,5 @@ int main() {
     while (scanf("%d %d",&x,&y) != EOF) {
         addEdge(x,y,students);
     }
-    BFS(0,students);
     return 0;
 }
