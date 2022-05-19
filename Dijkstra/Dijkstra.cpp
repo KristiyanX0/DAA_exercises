@@ -40,7 +40,6 @@ void dijkstra(int src) {
                 dist[next_vertex]=newDist;
                 parent[next_vertex]=vertex;
                 nodes.push({dist[next_vertex],next_vertex});
-
             }
         }
     }
